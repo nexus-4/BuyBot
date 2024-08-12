@@ -17,4 +17,5 @@ class ProductExtractor:
         return self._extract_element_text("h1", "name___120FN")
 
     def extract_product_price(self) -> str:
-        return self._extract_element_text("span", "product-price__2Mip5")
+        return self._extract_element_text("div", "gl-price-item")
+

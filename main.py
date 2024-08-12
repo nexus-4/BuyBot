@@ -2,6 +2,7 @@ from WebScraper import WebScraper
 from ProductExtractor import ProductExtractor
 from ProductBuyer import ProductBuyer
 
+
 def main():
     url = "https://www.adidas.com.br/yeezy-boost-700/GW0296.html?pr=oos_rr&slot=1&rec=ds"
     scraper = WebScraper(url)
@@ -16,6 +17,7 @@ def main():
     print(f"Product Price: {product_price}")
 
     scraper.close_driver()
+
 
 if __name__ == "__main__":
     main()
