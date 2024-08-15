@@ -1,3 +1,4 @@
+import requests
 from bs4 import BeautifulSoup
 
 
@@ -19,3 +20,5 @@ class ProductExtractor:
     def extract_product_price(self) -> str:
         return self._extract_element_text("div", "gl-price-item")
 
+    def extract_product_promo_price(self) -> str:
+        return self._extract_element_text("div", "gl-price-item--sale")
